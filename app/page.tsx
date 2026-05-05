@@ -11,28 +11,43 @@ export default function Home() {
         />
 
         {/* Navigation */}
-        <nav className="relative z-10 flex flex-wrap items-center justify-center gap-4 pt-8 text-xs uppercase tracking-[0.18em] text-[#2b2723]/70">
-          <a href="#story" className="hover:text-[#2b2723]">
+        <nav className="relative z-10 flex flex-wrap items-center justify-center gap-4 pt-8 text-xs font-semibold uppercase tracking-[0.18em] text-[#2b2723]/85">
+          <a
+            href="#story"
+            className="rounded px-3 py-1 font-light transition hover:bg-white/50 hover:text-[#2b2723] hover:font-normal hover:tracking-[0.19em]"
+          >
             Wir
           </a>
           <span className="text-[#d4af7f]">|</span>
 
-          <a href="#ablauf" className="hover:text-[#2b2723]">
+          <a
+            href="#ablauf"
+            className="rounded px-3 py-1 font-light transition hover:bg-white/50 hover:text-[#2b2723] hover:font-normal hover:tracking-[0.19em]"
+          >
             Ablauf
           </a>
           <span className="text-[#d4af7f]">|</span>
 
-          <a href="#location" className="hover:text-[#2b2723]">
+          <a
+            href="#location"
+            className="rounded px-3 py-1 font-light transition hover:bg-white/50 hover:text-[#2b2723] hover:font-normal hover:tracking-[0.19em]"
+          >
             Location
           </a>
           <span className="text-[#d4af7f]">|</span>
 
-          <a href="#rsvp" className="hover:text-[#2b2723]">
+          <a
+            href="#rsvp"
+            className="rounded px-3 py-1 font-light transition hover:bg-white/50 hover:text-[#2b2723] hover:font-normal hover:tracking-[0.19em]"
+          >
             Zusagen
           </a>
           <span className="text-[#d4af7f]">|</span>
 
-          <a href="#geschenke" className="hover:text-[#2b2723]">
+          <a
+            href="#geschenke"
+            className="rounded px-3 py-1 font-light transition hover:bg-white/50 hover:text-[#2b2723] hover:font-normal hover:tracking-[0.19em]"
+          >
             Geschenke
           </a>
         </nav>
