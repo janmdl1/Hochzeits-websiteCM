@@ -47,7 +47,7 @@ useEffect(() => {
         {/* Navigation */}
         <nav className="relative z-10 flex flex-wrap items-center justify-center gap-4 pt-8 text-xs uppercase tracking-[0.18em] text-[#2b2723]/85">
           {[
-            ["Wir", "#story"],
+            ["Unsere Geschichte", "#story"],
             ["Ablauf", "#ablauf"],
             ["Location", "#location"],
             ["Zusagen", "#rsvp"],
@@ -68,7 +68,7 @@ useEffect(() => {
         </nav>
 
         {/* Hero content */}
-        <div className="relative z-10 flex min-h-[72vh] flex-col items-center justify-center pt-6 text-center sm:pt-12">
+        <div className="relative z-10 flex min-h-[72vh] flex-col items-center justify-center pb-24 pt-6 text-center sm:pb-28 sm:pt-12">
           <div className="relative mx-auto flex w-full max-w-[460px] items-center justify-center px-6 py-6 sm:px-12 sm:py-12 xl:max-w-[560px] xl:px-20 xl:py-20 2xl:max-w-[650px]">
             <div className="absolute inset-0 border border-[#d4af7f]" />
             <div className="absolute inset-[10px] border border-[#d4af7f]" />
@@ -133,9 +133,10 @@ useEffect(() => {
       {/* STORY */}
       <section
         id="story"
-        className="relative overflow-hidden bg-[#efe3d9] px-6 py-24"
+        className="relative overflow-hidden bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.55),transparent_32%),radial-gradient(circle_at_85%_75%,rgba(212,175,127,0.18),transparent_34%),linear-gradient(180deg,#f6eadf_0%,#efe3d9_55%,#fbf7f1_100%)] px-6 py-24"
       >
-        <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-20 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl items-center gap-20 md:grid-cols-2">
+          {/* Images */}
           <div className="relative mx-auto h-[520px] w-full max-w-md">
             <img
               src="/floral-corner-left.png"
@@ -152,35 +153,46 @@ useEffect(() => {
             <img
               src="/couple-2.jpeg"
               alt="Christina und Marc"
-              className="absolute left-0 top-0 z-0 h-[360px] w-[280px] rounded-sm object-cover shadow-lg"
+              className="absolute left-0 top-0 z-0 h-[360px] w-[280px] rounded-sm object-cover shadow-xl"
             />
 
             <img
               src="/couple-1.jpg"
               alt="Christina und Marc"
-              className="absolute bottom-0 right-0 z-30 h-[320px] w-[250px] rounded-sm object-cover shadow-lg"
+              className="absolute bottom-0 right-0 z-30 h-[320px] w-[250px] rounded-sm object-cover shadow-xl"
             />
           </div>
 
-          <div>
-            <h2 className="font-serif text-4xl font-light uppercase tracking-[0.2em]">
-              Wie im Film
-            </h2>
+          {/* Text */}
+          <div className="relative">
+            <div className="absolute -inset-8 -z-0 rounded-sm bg-white/25 backdrop-blur-[1px]" />
 
-            <div className="mt-8 space-y-5 text-sm leading-8 text-[#2b2723]/75">
-              <p>
-                Hier kommt eure persönliche Geschichte hinein. Wie ihr euch
-                kennengelernt habt, was euch verbindet und warum dieser Tag für
-                euch so besonders ist.
+            <div className="relative z-10 border-l border-[#d4af7f]/60 pl-8">
+              <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#2b2723]/45">
+                Unsere Geschichte
               </p>
-              <p>
-                Nach vielen gemeinsamen Momenten, Abenteuern und Erinnerungen
-                freuen wir uns darauf, diesen besonderen Tag mit euch zu feiern.
-              </p>
-              <p>
-                Wir können es kaum erwarten, mit euch zu lachen, zu tanzen und
-                unvergessliche Erinnerungen zu schaffen.
-              </p>
+
+              <h2 className="font-serif text-4xl font-light uppercase tracking-[0.2em] text-[#2b2723]">
+                Wie im Film
+              </h2>
+
+              <div className="mt-8 space-y-5 text-sm leading-8 text-[#2b2723]/75">
+                <p>
+                  Hier kommt eure persönliche Geschichte hinein. Wie ihr euch
+                  kennengelernt habt, was euch verbindet und warum dieser Tag für euch
+                  so besonders ist.
+                </p>
+
+                <p>
+                  Nach vielen gemeinsamen Momenten, Abenteuern und Erinnerungen freuen
+                  wir uns darauf, diesen besonderen Tag mit euch zu feiern.
+                </p>
+
+                <p>
+                  Wir können es kaum erwarten, mit euch zu lachen, zu tanzen und
+                  unvergessliche Erinnerungen zu schaffen.
+                </p>
+              </div>
             </div>
           </div>
         </div>
