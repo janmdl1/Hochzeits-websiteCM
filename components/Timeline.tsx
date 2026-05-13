@@ -1,4 +1,12 @@
 export default function Timeline() {
+  // Zeitlicher Ablauf der Hochzeit
+  const timelineItems = [
+    ["14:00", "Trauung"],
+    ["15:30", "Sektempfang"],
+    ["18:00", "Abendessen"],
+    ["20:00", "Party"],
+  ];
+
   return (
     <section
       id="timeline"
@@ -11,21 +19,11 @@ export default function Timeline() {
 
       {/* Zeitlicher Ablauf des Hochzeitstags */}
       <div className="mx-auto mt-12 max-w-xl space-y-6 text-[#2b2723]/75">
-        <p>
-          <span className="font-medium">14:00</span> – Trauung
-        </p>
-
-        <p>
-          <span className="font-medium">15:30</span> – Sektempfang
-        </p>
-
-        <p>
-          <span className="font-medium">18:00</span> – Abendessen
-        </p>
-
-        <p>
-          <span className="font-medium">20:00</span> – Party
-        </p>
+        {timelineItems.map(([time, event]) => (
+          <p key={time}>
+            <span className="font-medium">{time}</span> – {event}
+          </p>
+        ))}
       </div>
     </section>
   );
