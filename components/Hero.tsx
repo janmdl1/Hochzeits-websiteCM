@@ -61,7 +61,7 @@ export default function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden bg-[#fbf7f1] px-6">
       {/* Hintergrundbild */}
       <img
-        src="/floral.png"
+        src="/floral_Hero.png"
         alt=""
         className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center opacity-90"
       />
