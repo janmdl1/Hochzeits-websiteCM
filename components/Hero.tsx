@@ -66,23 +66,23 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center opacity-90"
       />
 
-      {/* Navigationsleiste */}
-      <nav className="relative z-10 flex flex-wrap items-center justify-center gap-4 pt-8 text-xs uppercase tracking-[0.18em] text-[#2b2723]/85">
+        {/* Navigationsleiste */}
+        <nav className="relative z-10 mx-auto mt-6 flex w-fit flex-wrap items-center justify-center gap-2 rounded-full border border-white/20 bg-white/25 px-4 py-3 shadow-md backdrop-blur-lg">
         {navItems.map(([label, href], index) => (
-          <div key={label} className="flex items-center gap-4">
+            <div key={label} className="flex items-center gap-2">
             <a
-              href={href}
-              className="rounded bg-white/50 px-3 py-1 font-light backdrop-blur-[2px] transition hover:bg-white/90 hover:font-normal hover:tracking-[0.19em] hover:text-[#2b2723]"
+                href={href}
+                className="transform rounded-full px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#2b2723]/85 transition duration-300 hover:scale-105 hover:bg-[#d4af7f]/35 hover:text-[#2b2723] hover:font-medium"
             >
-              {label}
+                {label}
             </a>
 
             {index < navItems.length - 1 && (
-              <span className="text-[#d4af7f]">|</span>
+                <span className="text-[#d4af7f]/70">|</span>
             )}
-          </div>
+            </div>
         ))}
-      </nav>
+        </nav>
 
       {/* Hero-Inhalt */}
       <div className="relative z-10 flex min-h-[72vh] flex-col items-center justify-center pb-24 pt-6 text-center sm:pb-28 sm:pt-12">
