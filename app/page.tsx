@@ -6,6 +6,7 @@ import Confirmation from "@/components/Confirmation";
 import Gifts from "@/components/Gifts";
 import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Gifts />
       <Gallery />
       <FAQ />
+      <Footer/>
 
     </main>
   );
