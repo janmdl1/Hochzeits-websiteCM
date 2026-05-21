@@ -3,8 +3,8 @@ import Story from "@/components/Story";
 import Timeline from "@/components/Timeline";
 import Location from "@/components/Location";
 import Confirmation from "@/components/Confirmation";
-import Gallery from "@/components/Gallery";
 import Gifts from "@/components/Gifts";
+import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <Timeline />
       <Location />
       <Confirmation />
-      <Gallery />
       <Gifts />
+      <Gallery />
       <FAQ />
 
     </main>
