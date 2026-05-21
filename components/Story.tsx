@@ -1,7 +1,7 @@
 export default function Story() {
   // Story-Absätze
   const storyParagraphs = [
-  "Manchmal begegnen sich zwei Menschen nicht zum ersten Mal – sondern zum ersten Mal richtig.",
+  "Manchmal begegnen sich zwei Menschen nicht zum ersten Mal, sondern zum ersten Mal richtig.",
 
   "Was mit einem gemeinsamen Abendessen begann, fühlte sich schnell nach Vertrautheit, Leichtigkeit und Zuhause an.",
 
