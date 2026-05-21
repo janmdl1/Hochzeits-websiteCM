@@ -15,7 +15,7 @@ export default function Hero() {
   ];
 
   // Festlegung Hochzeitsdatum
-  const weddingDate = new Date("2027-07-17T00:00:00");
+  const weddingDate = new Date("2027-05-29T13:00:00");
 
   // Berechnung der verbleibenden Zeit bis zur Hochzeit
   const calculateTimeLeft = () => {
@@ -119,7 +119,7 @@ export default function Hero() {
             {/* Datum und Countdown */}
             <div className="mt-5">
               <p className="text-sm tracking-[0.4em] text-[#2b2723]/70 xl:text-base">
-                17 | 07 | 2027
+                29 | 05 | 2027
               </p>
 
               {/* Countdown-Anzeige */}
